@@ -1,0 +1,6 @@
+C:\Users\pc\source\repos\SolReflexions\Initial\bin\Debug\Initial.dll
+C:\Users\pc\source\repos\SolReflexions\Initial\bin\Debug\Initial.pdb
+C:\Users\pc\source\repos\SolReflexions\Initial\obj\Debug\Initial.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\SolReflexions\Initial\obj\Debug\Initial.dll
+C:\Users\pc\source\repos\SolReflexions\Initial\obj\Debug\Initial.pdb
+C:\Users\pc\source\repos\SolReflexions\Initial\obj\Debug\Initial.csprojAssemblyReference.cache

@@ -1,0 +1,6 @@
+C:\Users\pc\source\repos\SolReflexions\AppReflection\bin\Debug\AppReflection.exe.config
+C:\Users\pc\source\repos\SolReflexions\AppReflection\bin\Debug\AppReflection.exe
+C:\Users\pc\source\repos\SolReflexions\AppReflection\bin\Debug\AppReflection.pdb
+C:\Users\pc\source\repos\SolReflexions\AppReflection\obj\Debug\AppReflection.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\SolReflexions\AppReflection\obj\Debug\AppReflection.exe
+C:\Users\pc\source\repos\SolReflexions\AppReflection\obj\Debug\AppReflection.pdb

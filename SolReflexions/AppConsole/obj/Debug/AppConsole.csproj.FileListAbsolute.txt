@@ -1,0 +1,7 @@
+C:\Users\pc\source\repos\SolReflexions\AppConsole\bin\Debug\AppConsole.exe.config
+C:\Users\pc\source\repos\SolReflexions\AppConsole\bin\Debug\AppConsole.exe
+C:\Users\pc\source\repos\SolReflexions\AppConsole\bin\Debug\AppConsole.pdb
+C:\Users\pc\source\repos\SolReflexions\AppConsole\obj\Debug\AppConsole.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\SolReflexions\AppConsole\obj\Debug\AppConsole.exe
+C:\Users\pc\source\repos\SolReflexions\AppConsole\obj\Debug\AppConsole.pdb
+C:\Users\pc\source\repos\SolReflexions\AppConsole\obj\Debug\AppConsole.csprojAssemblyReference.cache
