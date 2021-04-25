@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 using System.Reflection;
 using System.IO;
- 
+
+/*
+* Title:Class programan
+* Author:Roberto Soliz
+* Date:25/04/2021
+* Purpose:Use of reflections and implementation in projects
+* add Snippet custom
+*/
+
 namespace AppReflection
 {
     class Program
@@ -21,12 +29,27 @@ namespace AppReflection
                 asmInitial = Assembly.Load("Business");
                 asmBus = Assembly.Load("Initial");
 
-                getAssembly(asmInitial, "Business.Employees", "getInformation", "result", "Marcela", "Antelo", "895612", "Santa Cruz", "Bolivia");
+          
+                getAssembly(asmInitial, "Business.Employees", "getInformation", "result", new Person
+                {
+                    name = "Marcela",
+                    surName = "Antelo",
+                    ci = "895612",
+                    city = "Santa Cruz",
+                    country = "Bolivia"
+                });
                
                 Console.WriteLine("");
                 Console.WriteLine("-------------------------------------------------");
-
-                getAssembly(asmBus, "Initial.Customer", "getInformation", "result", "Juan", "Perez", "689524", "Cancun", "Mexico");
+                var item = new Person
+                {
+                    name = "Juan",
+                    surName = "Perez",
+                    ci = "689524",
+                    city = "Cancun",
+                    country = "Mexico"
+                };
+                getAssembly(asmBus, "Initial.Customer", "getInformation", "result", item);
                 Console.Read();
 
             }
@@ -38,7 +61,7 @@ namespace AppReflection
 
         }
 
-        public static void getAssembly(Assembly asm, string nameClass, string nameMethod, string propResult, string name, string surName, string phone, string city, string country)
+        public static void getAssembly(Assembly asm, string nameClass, string nameMethod, string propResult, Person item)
         {
             if (asm != null)
             {
@@ -59,7 +82,7 @@ namespace AppReflection
                     string respuesta = string.Empty;
 
                     //invocamos al metodo 
-                    getInformation.Invoke(obj, new object[] { name, surName, phone, city, country });
+                    getInformation.Invoke(obj, new object[] { item.name, item.surName, item.ci, item.city, item.country });
 
                     respuesta = (string)resultado.GetValue(obj);
 
