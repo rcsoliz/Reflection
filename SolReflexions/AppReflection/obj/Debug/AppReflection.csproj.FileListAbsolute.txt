@@ -4,3 +4,10 @@ C:\Users\pc\source\repos\SolReflexions\AppReflection\bin\Debug\AppReflection.pdb
 C:\Users\pc\source\repos\SolReflexions\AppReflection\obj\Debug\AppReflection.csproj.CoreCompileInputs.cache
 C:\Users\pc\source\repos\SolReflexions\AppReflection\obj\Debug\AppReflection.exe
 C:\Users\pc\source\repos\SolReflexions\AppReflection\obj\Debug\AppReflection.pdb
+D:\pRepositorio\Reflection\SolReflexions\AppReflection\bin\Debug\AppReflection.exe.config
+D:\pRepositorio\Reflection\SolReflexions\AppReflection\bin\Debug\AppReflection.exe
+D:\pRepositorio\Reflection\SolReflexions\AppReflection\bin\Debug\AppReflection.pdb
+D:\pRepositorio\Reflection\SolReflexions\AppReflection\obj\Debug\AppReflection.csprojAssemblyReference.cache
+D:\pRepositorio\Reflection\SolReflexions\AppReflection\obj\Debug\AppReflection.csproj.CoreCompileInputs.cache
+D:\pRepositorio\Reflection\SolReflexions\AppReflection\obj\Debug\AppReflection.exe
+D:\pRepositorio\Reflection\SolReflexions\AppReflection\obj\Debug\AppReflection.pdb

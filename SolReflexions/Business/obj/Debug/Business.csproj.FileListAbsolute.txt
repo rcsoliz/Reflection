@@ -3,3 +3,9 @@ C:\Users\pc\source\repos\SolReflexions\Business\bin\Debug\Business.pdb
 C:\Users\pc\source\repos\SolReflexions\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
 C:\Users\pc\source\repos\SolReflexions\Business\obj\Debug\Business.dll
 C:\Users\pc\source\repos\SolReflexions\Business\obj\Debug\Business.pdb
+D:\pRepositorio\Reflection\SolReflexions\Business\bin\Debug\Business.dll
+D:\pRepositorio\Reflection\SolReflexions\Business\bin\Debug\Business.pdb
+D:\pRepositorio\Reflection\SolReflexions\Business\obj\Debug\Business.csprojAssemblyReference.cache
+D:\pRepositorio\Reflection\SolReflexions\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+D:\pRepositorio\Reflection\SolReflexions\Business\obj\Debug\Business.dll
+D:\pRepositorio\Reflection\SolReflexions\Business\obj\Debug\Business.pdb
