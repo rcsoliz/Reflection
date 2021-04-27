@@ -8,7 +8,11 @@ C:\Users\pc\source\repos\SolReflexions\AppConsole\obj\Debug\AppConsole.csprojAss
 D:\pRepositorio\Reflection\SolReflexions\AppConsole\bin\Debug\AppConsole.exe.config
 D:\pRepositorio\Reflection\SolReflexions\AppConsole\bin\Debug\AppConsole.exe
 D:\pRepositorio\Reflection\SolReflexions\AppConsole\bin\Debug\AppConsole.pdb
-D:\pRepositorio\Reflection\SolReflexions\AppConsole\obj\Debug\AppConsole.csprojAssemblyReference.cache
 D:\pRepositorio\Reflection\SolReflexions\AppConsole\obj\Debug\AppConsole.csproj.CoreCompileInputs.cache
 D:\pRepositorio\Reflection\SolReflexions\AppConsole\obj\Debug\AppConsole.exe
 D:\pRepositorio\Reflection\SolReflexions\AppConsole\obj\Debug\AppConsole.pdb
+D:\pRepositorio\Reflection\SolReflexions\AppConsole\bin\Debug\Initial.dll
+D:\pRepositorio\Reflection\SolReflexions\AppConsole\bin\Debug\Initial.pdb
+D:\pRepositorio\Reflection\SolReflexions\AppConsole\bin\Debug\Initial.dll.config
+D:\pRepositorio\Reflection\SolReflexions\AppConsole\obj\Debug\AppConsole.csprojAssemblyReference.cache
+D:\pRepositorio\Reflection\SolReflexions\AppConsole\obj\Debug\AppConsole.csproj.CopyComplete

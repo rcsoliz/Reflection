@@ -15,5 +15,11 @@ namespace Initial
             result= string.Format("Customers name: {0} surname: {1}, ci: {2}, city: {3}, country: {4} ",
                 name, surnames, ci, city, country);
         }
+
+        public void getDataCustomer()
+        {
+            result = "Date customer !!!";
+        }
+
     }
 }

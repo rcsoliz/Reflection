@@ -6,7 +6,8 @@ C:\Users\pc\source\repos\SolReflexions\Initial\obj\Debug\Initial.pdb
 C:\Users\pc\source\repos\SolReflexions\Initial\obj\Debug\Initial.csprojAssemblyReference.cache
 D:\pRepositorio\Reflection\SolReflexions\Initial\bin\Debug\Initial.dll
 D:\pRepositorio\Reflection\SolReflexions\Initial\bin\Debug\Initial.pdb
-D:\pRepositorio\Reflection\SolReflexions\Initial\obj\Debug\Initial.csprojAssemblyReference.cache
 D:\pRepositorio\Reflection\SolReflexions\Initial\obj\Debug\Initial.csproj.CoreCompileInputs.cache
 D:\pRepositorio\Reflection\SolReflexions\Initial\obj\Debug\Initial.dll
 D:\pRepositorio\Reflection\SolReflexions\Initial\obj\Debug\Initial.pdb
+D:\pRepositorio\Reflection\SolReflexions\Initial\bin\Debug\Initial.dll.config
+D:\pRepositorio\Reflection\SolReflexions\Initial\obj\Debug\Initial.csprojAssemblyReference.cache
