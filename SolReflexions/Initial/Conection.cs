@@ -69,7 +69,7 @@ namespace Initial
             try
             {
                 SqlConnection objConection = null;
-                string connectionString = "Server=DESKTOP-5ES1ETN; Initial Catalog=showmy; User Id=sa; Password=sa";
+                string connectionString = "Server=DESKTOP-5ES1ETN; Initial Catalog=TESTPOWERBATCH; User Id=sa; Password=sa";
                 objConection = new SqlConnection(connectionString);
                 openConection(objConection);
 
@@ -89,12 +89,12 @@ namespace Initial
             }
         }
 
-        public void getDataInformation(string strSQL, ref DataSet dts)
+        public void GetDataInformation(string strSQL, int parameterBlock, ref DataSet dts)
         {
             try
             {
                 SqlConnection objConection = null;
-                string connectionString = "Server=DESKTOP-5ES1ETN; Initial Catalog=showmy; User Id=sa; Password=sa";
+                string connectionString = "Server=DESKTOP-5ES1ETN; Initial Catalog=TESTPOWERBATCH; User Id=sa; Password=sa";
                 objConection = new SqlConnection(connectionString);
                 openConection(objConection);
 

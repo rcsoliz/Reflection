@@ -21,49 +21,21 @@ namespace AppReflection
 {
     class Program
     {
+        public const string ASSEMBLY_PROYECT_NAME = "Initial";
+        public const string ASSEMBLY_CLASS_NAME = "Conection";
+        public const string ASSEMBLY_METHOD_NAME = "GetDataInformation";
         static void Main(string[] args)
         {
-            Assembly asmInitial = null;
-            Assembly asmBus = null;
+            Assembly asm = null;
+
             try
             {
-                //cargamos el asembly
-                asmInitial = Assembly.Load("Business");
-                asmBus = Assembly.Load("Initial");
+                asm = Assembly.Load(ASSEMBLY_PROYECT_NAME);
 
-          
-                getAssembly(asmInitial, "Business.Employees", "getInformation", "result", new Person
-                {
-                    name = "Marcela",
-                    surName = "Antelo",
-                    ci = "895612",
-                    city = "Santa Cruz",
-                    country = "Bolivia"
-                });
-               
-                Console.WriteLine("");
                 Console.WriteLine("-------------------------------------------------");
-                var item = new Person
-                {
-                    name = "Juan",
-                    surName = "Perez",
-                    ci = "689524",
-                    city = "Cancun",
-                    country = "Mexico"
-                };
-                getAssembly(asmBus, "Initial.Customer", "getInformation", "result", item);
+                string assemblyClassName = $"{ASSEMBLY_PROYECT_NAME}.{ASSEMBLY_CLASS_NAME}";
 
-                Console.WriteLine("");
-                Console.WriteLine("-------------------------------------------------");
-
-                getAssemblyInformation(asmBus, "Initial.Customer", "getDataCustomer", "result");
-
-
-
-                Console.WriteLine("");
-                Console.WriteLine("-------------------------------------------------");
-
-                getAssemblyData(asmBus, "Initial.Conection", "getDataInformation", "result");
+                getAssemblyData(asm, assemblyClassName, ASSEMBLY_METHOD_NAME);
 
                 Console.Read();
 
@@ -76,105 +48,36 @@ namespace AppReflection
 
         }
 
-        public static void getAssembly(Assembly asm, string nameClass, string nameMethod, string propResult, Person item)
+        public static void getAssemblyData(Assembly asm, string className, string methodName)
         {
             if (asm != null)
             {
                 // obtenemos el typo que no es mas que la clase con la que desemos trabajar
-                Type objClass = asm.GetType(nameClass);
+                Type objClass = asm.GetType(className);
                 try
                 {
                     //creamos la instancia
                     object obj = Activator.CreateInstance(objClass, new object[] { });
-                    Console.WriteLine("Tenemos instancia de {0}", obj);
+                    Console.WriteLine($"PROYECT NAME AND CLASS NAME {obj}");
 
                     //obtenemos el metodo
-                    MethodInfo getInformation = objClass.GetMethod(nameMethod);
+                    MethodInfo getInformation = objClass.GetMethod(methodName);
 
-                    //obtenemos las propiedades
-                    PropertyInfo resultado = objClass.GetProperty(propResult);
+                    ////obtenemos las propiedades
+                    //PropertyInfo resultado = objClass.GetProperty(propResult);
 
-                    string respuesta = string.Empty;
-
-                    //invocamos al metodo 
-                    getInformation.Invoke(obj, new object[] { item.name, item.surName, item.ci, item.city, item.country });
-
-                    respuesta = (string)resultado.GetValue(obj);
-
-                    //Imprimimos la respuesta
-                    Console.WriteLine("El resultado es: {0} ", respuesta);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-        }
-
-
-        public static void getAssemblyInformation(Assembly asm, string nameClass, string nameMethod, string propResult)
-        {
-            if (asm != null)
-            {
-                // obtenemos el typo que no es mas que la clase con la que desemos trabajar
-                Type objClass = asm.GetType(nameClass);
-                try
-                {
-                    //creamos la instancia
-                    object obj = Activator.CreateInstance(objClass, new object[] { });
-                    Console.WriteLine("Tenemos instancia de {0}", obj);
-
-                    //obtenemos el metodo
-                    MethodInfo getInformation = objClass.GetMethod(nameMethod);
-
-                    //obtenemos las propiedades
-                    PropertyInfo resultado = objClass.GetProperty(propResult);
-
-                    string respuesta = string.Empty;
+                    DataSet assemblyDts = new DataSet();
 
                     //invocamos al metodo 
-                    getInformation.Invoke(obj, new object[] {});
+                    int queryRange = 100;
+                    getInformation.Invoke(obj, new object[] { $"select top { queryRange }  Id_Test, Name_Test, Description_Test, DataCreazione_Test from [test].[Add_Test]" , queryRange, assemblyDts });
 
-                    respuesta = (string)resultado.GetValue(obj);
+                    Console.WriteLine("-------------------------------------------------");
+                    foreach (DataRow row in assemblyDts.Tables[0].Rows)
+                    {
+                        Console.WriteLine($"{row.ItemArray[0]}  {row.ItemArray[1]}   {row.ItemArray[2]}");
+                    }
 
-                    //Imprimimos la respuesta
-                    Console.WriteLine("El resultado es: {0} ", respuesta);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-        }
-
-
-        public static void getAssemblyData(Assembly asm, string nameClass, string nameMethod, string propResult)
-        {
-            if (asm != null)
-            {
-                // obtenemos el typo que no es mas que la clase con la que desemos trabajar
-                Type objClass = asm.GetType(nameClass);
-                try
-                {
-                    //creamos la instancia
-                    object obj = Activator.CreateInstance(objClass, new object[] { });
-                    Console.WriteLine("Tenemos instancia de {0}", obj);
-
-                    //obtenemos el metodo
-                    MethodInfo getInformation = objClass.GetMethod(nameMethod);
-
-                    //obtenemos las propiedades
-                    PropertyInfo resultado = objClass.GetProperty(propResult);
-
-                    DataSet respuesta = new DataSet();
-
-                    //invocamos al metodo 
-                    getInformation.Invoke(obj, new object[] { "select Id_Ads, CreationDate_Ads, Currency_Ads from showmy.ads", respuesta });
-
-                    DataSet dtp = new DataSet();
-                    dtp = respuesta;
-                    //Imprimimos la respuesta
-                    Console.WriteLine("El resultado es: {0} ", respuesta);
                 }
                 catch (Exception ex)
                 {

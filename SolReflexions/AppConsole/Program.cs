@@ -36,7 +36,7 @@ namespace AppConsole
         {
             try
             {
-                string consulta = "select * from showmy.ads";
+                string consulta = "select * from TESTPOWERBATCH.ads";
                 Conection objConection = new Conection();
 
                 DataSet dt = new DataSet();
@@ -73,7 +73,7 @@ namespace AppConsole
                     DataSet respuesta = new DataSet();
 
                     //invocamos al metodo 
-                    getInformation.Invoke(obj, new object[] { "select * from showmy.ads" });
+                    getInformation.Invoke(obj, new object[] { "select * from TESTPOWERBATCH.ads" });
 
                     respuesta = (DataSet)resultado.GetValue(obj);
 
